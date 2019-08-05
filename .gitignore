@@ -1,2 +1,5 @@
 node_modules/
 .git/  
+gulpfile.js
+package.json
+package-lock.json
