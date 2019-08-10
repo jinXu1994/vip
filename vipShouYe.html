@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>唯品会首页</title>
-		<link rel="stylesheet" href="css/vipShouYe.css">
+		<link rel="stylesheet" href="css/homePage.css">
 		<link rel="stylesheet" href="css/iconfont.css">
 	</head>
 	<body>
@@ -194,31 +194,33 @@
 			</div>
 		</header>
 		<!--导航栏-->
-		<nav>
-			<div id="N1">
-				<p class="iconfont icon-fenLei"></p>
-				<p class="p2">商品分类</p>
-			</div>
-			<div id="N2">
-				<a href="#">首页</a>  
-				<a href="#">最后疯抢</a>
-				<a href="#">唯品快抢</a>  
-				<a href="#">女装</a>
-				<a href="#">母婴</a>
-				<a href="#">家电</a>
-				<a href="#">国际</a>
-				<a href="#">美妆</a>
-				<a href="#">鞋包</a>
-				<a href="#">男装</a>
-				<a href="#">预告</a>				
-			</div>
-			<div id="N3">				
-				<p class="p1">
-					<a href="#">更多</a>
-				</p>
-				<div id="n3">
-					<p class="iconfont icon-xia"></p>
-				</div>				
+		<nav class="nav_nav2">
+			<div class="nav_nav2">
+				<div id="N1">
+					<p class="iconfont icon-fenLei"></p>
+					<p class="p2">商品分类</p>
+				</div>
+				<div id="N2">
+					<a href="#">首页</a>  
+					<a href="#">最后疯抢</a>
+					<a href="#">唯品快抢</a>  
+					<a href="#">女装</a>
+					<a href="#">母婴</a>
+					<a href="#">家电</a>
+					<a href="#">国际</a>
+					<a href="#">美妆</a>
+					<a href="#">鞋包</a>
+					<a href="#">男装</a>
+					<a href="#">预告</a>				
+				</div>
+				<div id="N3">				
+					<p class="p1">
+						<a href="#">更多</a>
+					</p>
+					<div id="n3">
+						<p class="iconfont icon-xia"></p>
+					</div>				
+				</div>	
 			</div>
 		</nav>
 		<!-- banner -->
@@ -242,6 +244,7 @@
 						</div>
 					</div>
 				</div>
+				
                 <div id="ban2">
                 	<div id="huaKuai"></div>
                 </div>				
@@ -1824,70 +1827,91 @@
 </html>
 <script type="text/javascript" src="js/banner.js"></script>
 <script type="text/javascript" src="js/shangPin.js"></script>
+<!--<script type="text/javascript" src="js/rightNav.js"></script>-->
 <script type="text/javascript" src="js/tomorrowSee.js"></script>
+<script type="text/javascript" src="js/leftNav.js"></script>
+<script type="text/javascript" src="js/ajaxTools.js"></script>
 <script type="text/javascript">
 	
 	//精选
 	var jingXuan1=document.getElementsByName("jingXuan1");
 //	console.log($(".jingXuan1"));
-	new shangPin({
-		url:"img/jingXuan/1.jpg",
-		textP:"雅莹家族旗下品牌女装专场",
-		zheP:"0.9",
-		spanText:"折起",
-		divText:"全场折上8折"
-	},jingXuan1[0]);
+	ajax190502({
+		"url":"php/getGoodsList.php",
+		"method":"get",
+		"func":getData
+	})
 	
-	new shangPin({
-		url:"img/jingXuan/2.jpg",
-		textP:"衣香丽影YSING女装专场",
-		zheP:"1.6",
-		spanText:"折起",
-		divText:"全场折上8折"
-	},jingXuan1[1]);
-	
-    new shangPin({
-		url:"img/jingXuan/3.jpg",
-		textP:"盖璞GAP男女装特惠专场",
-		zheP:"4",
-		spanText:"折起",
-		divText:"全场折上8折"
-	},jingXuan1[2]);
-	
-	new shangPin({
-		url:"img/jingXuan/4.jpg",
-		textP:"澳洲Healty Care营养膳食...",
-		zheP:"2.6",
-		spanText:"折起"
-	},jingXuan1[3]);
-	
-	new shangPin({
-		url:"img/jingXuan/5.jpg",
-		textP:"丸美MARUBI护肤专场",
-		zheP:"1.1",
-		spanText:"折起"
-	},jingXuan1[4]);
-	
-	new shangPin({
-		url:"img/jingXuan/6.jpg",
-		textP:"特步XTEP男女运动鞋服专场",
-		zheP:"3.5",
-		spanText:"折起",
-		divText:"全场折上8折"
-	},jingXuan1[5]);
-	
-	new shangPin({
-		url:"img/jingXuan/7.jpg",
-		textP:"苏泊尔SUPOR餐厨专场",
-		zheP:"1.7",
-		spanText:"折起",
-		divText:""
-	},jingXuan1[6]);
-	
-	new shangPin({
-	
-	},jingXuan1[7]);
-	
+	function getData(str){
+		let arr = JSON.parse(str);
+		for(let i in arr){
+			new shangPin({
+			url:arr[i].goodsImg,
+			textP:arr[i].beiyong1,
+			zheP:arr[i].beiyong2,
+			spanText:arr[i].beiyong3,
+			divText:arr[i].beiyong4
+		},jingXuan1[i]);
+	   }
+}	
+//	new shangPin({
+//		url:"img/jingXuan/1.jpg",
+//		textP:"雅莹家族旗下品牌女装专场",
+//		zheP:"0.9",
+//		spanText:"折起",
+//		divText:"全场折上8折"
+//	},jingXuan1[0]);
+//	
+//	new shangPin({
+//		url:"img/jingXuan/2.jpg",
+//		textP:"衣香丽影YSING女装专场",
+//		zheP:"1.6",
+//		spanText:"折起",
+//		divText:"全场折上8折"
+//	},jingXuan1[1]);
+//	
+//  new shangPin({
+//		url:"img/jingXuan/3.jpg",
+//		textP:"盖璞GAP男女装特惠专场",
+//		zheP:"4",
+//		spanText:"折起",
+//		divText:"全场折上8折"
+//	},jingXuan1[2]);
+//	
+//	new shangPin({
+//		url:"img/jingXuan/4.jpg",
+//		textP:"澳洲Healty Care营养膳食...",
+//		zheP:"2.6",
+//		spanText:"折起"
+//	},jingXuan1[3]);
+//	
+//	new shangPin({
+//		url:"img/jingXuan/5.jpg",
+//		textP:"丸美MARUBI护肤专场",
+//		zheP:"1.1",
+//		spanText:"折起"
+//	},jingXuan1[4]);
+//	
+//	new shangPin({
+//		url:"img/jingXuan/6.jpg",
+//		textP:"特步XTEP男女运动鞋服专场",
+//		zheP:"3.5",
+//		spanText:"折起",
+//		divText:"全场折上8折"
+//	},jingXuan1[5]);
+//	
+//	new shangPin({
+//		url:"img/jingXuan/7.jpg",
+//		textP:"苏泊尔SUPOR餐厨专场",
+//		zheP:"1.7",
+//		spanText:"折起",
+//		divText:""
+//	},jingXuan1[6]);
+//	
+//	new shangPin({
+//	
+//	},jingXuan1[7]);
+//	
 	//女装
 	var nvZhuang1=document.getElementsByName("nvZhuang1");
 	new shangPin({
@@ -8317,8 +8341,10 @@
 		divText:""
 	},shengHuo1[79]);
 	
+	
 	//明日预告
 	var notice=document.getElementsByName("notice");
+
 	new tomorrowSee({
 		url:"img/tomorrowYuGao/1.jpg",
 		aText:"clanks品牌专场",
@@ -8728,13 +8754,77 @@
 	},notice[79]);
 	
 	
-function $(str){
-	if(str.charAt(0)=="#"){
-		return document.getElementById(str.substring(1));
-	}else if(str.charAt(0)=="."){
-		return document.getElementsByClassName(str.substring(1));
-	}else{
-		return document.getElementsByTagName(str);
+//function $(str){
+//	if(str.charAt(0)=="#"){
+//		return document.getElementById(str.substring(1));
+//	}else if(str.charAt(0)=="."){
+//		return document.getElementsByClassName(str.substring(1));
+//	}else{
+//		return document.getElementsByTagName(str);
+//	}
+//}
+
+function ajax1905(url,method,params,func,isAsync){
+
+	let xhr = new XMLHttpRequest();
+
+	
+	let sendstr = '';
+	for(let key in params){
+		sendstr += `${key}=${params[key]}&`;
+
 	}
-}	
+	if(sendstr.length>0){
+		sendstr = sendstr.substring(0,sendstr.length-1); 
+	}
+	
+	let urlAndParam = url;
+	if(method.toLowerCase()=="get" && sendstr!=""){
+		urlAndParam+= "?"+sendstr;
+	}
+
+
+	xhr.open(method,urlAndParam,isAsync);
+
+
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState==4 && xhr.status==200){
+			
+			if(func){
+				func(xhr.responseText);
+			}
+		}
+	}
+	if(method.toLowerCase()=="post"){
+		xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+		xhr.send(sendstr);
+	}else{
+
+		xhr.send();	
+	}
+	
+}
+
+
+
+function ajax190502(obj){
+
+	let defaultObj = {
+		"url":"#",
+		"method":"get",
+		"params":{},
+		"func":null,
+		"isAsync":true
+	};
+
+	ajaxObj = {};
+	for(let key in defaultObj){
+		ajaxObj[key] = obj[key] || defaultObj[key];
+	}
+
+	ajax1905(ajaxObj.url,ajaxObj.method,ajaxObj.params,ajaxObj.func,ajaxObj.isAsync);	
+}
+
+
+
 </script>

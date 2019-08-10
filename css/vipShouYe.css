@@ -270,6 +270,8 @@ ul,ol{
         /*height:26px;
 		line-height: 26px;*/
 		float: right;
+		position: fixed;
+		z-index: 55;
 		/*background:greenyellow;*/
 	}
 	
@@ -562,7 +564,7 @@ header{
 
 #header2 {
 	width:319px;
-	height:24px
+	height:24px;
 	line-height: 24px;
 	padding-left:2px;
 	font-size: 12px;

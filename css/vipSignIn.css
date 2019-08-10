@@ -1,0 +1,463 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, dd, dt, textarea, select, input, hr {
+  margin: 0;
+  padding: 0; }
+
+a, a:hover {
+  text-decoration: none; }
+
+a {
+  color: #333; }
+
+a:hover {
+  color: #f10180; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  /*display:block;*/
+  border: none; }
+
+a, img {
+  vertical-align: top;
+  background: 0 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+i, em {
+  font-style: normal; }
+
+html, body {
+  height: 100%; }
+
+ul, ol {
+  list-style: none; }
+
+header {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff; }
+  header div {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto; }
+    header div a {
+      float: left;
+      width: 125px;
+      height: 100px;
+      vertical-align: top;
+      line-height: 500px;
+      background-image: url(../img.SignIn/sprites-hash-6954197b.png);
+      background-position: -308px -57px;
+      overflow: hidden; }
+    header div .header_you {
+      float: right;
+      width: 304px;
+      height: 100px;
+      background-image: url(../img.SignIn/sprites-hash-6954197b.png);
+      background-position: -622px 0px; }
+
+.MajorPart {
+  background-image: url(../img.SignIn/15487540172274.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%; }
+
+.MajorPart_div01 {
+  width: 1000px;
+  min-height: 550px;
+  margin: 0 auto;
+  padding: 50px 20px; }
+
+.SignIn_right {
+  float: right;
+  width: 360px;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #fff; }
+
+.SignIn_right_top {
+  width: 360px;
+  overflow: hidden; }
+
+nav {
+  border-bottom: 1px solid #e0e0e0;
+  width: 360px;
+  height: 50px;
+  position: relative; }
+
+.right_var:after {
+  position: absolute;
+  top: 15px;
+  right: 180px;
+  z-index: 1;
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+  content: '';
+  font-size: 0;
+  line-height: 0; }
+
+.right_01 {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700; }
+
+.right_byMa {
+  color: #f10180; }
+
+.SignIn_into {
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.SignIn_byImg {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  padding-top: 26px; }
+
+.byCode {
+  width: 300px;
+  height: 212px;
+  position: relative; }
+
+.erCode {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  margin: 20px auto;
+  left: 0;
+  border: 1px solid #f0f0f0; }
+
+.codImg {
+  width: 150px;
+  height: 150px;
+  background: url(../img.SignIn/getQrImage.png) no-repeat 10px; }
+
+.tipImg {
+  width: 122px;
+  height: 202px;
+  position: absolute;
+  right: 0px;
+  background: url(../img.SignIn/sprites-hash-6954197b.png) -1px 234px; }
+
+.pro {
+  width: 300px;
+  height: 16px;
+  line-height: 1.8;
+  margin-top: 10px;
+  font-size: 12px;
+  position: relative; }
+
+.pro span {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-left: 37px;
+  margin-right: 6px;
+  background: url(../img.SignIn/sprites-hash-6954197b.png) 16px -121px; }
+
+.Pro_center {
+  color: #f10180; }
+
+.SignIn_in {
+  width: 300px;
+  overflow: hidden; }
+
+.SignIn_input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  transition: none !important;
+  opacity: 1 !important; }
+
+.SignIn_in .u-input {
+  padding-left: 40px;
+  width: 248px;
+  height: 32px;
+  line-height: 32px; }
+
+.ui-input {
+  padding: 6px 10px;
+  font: 14px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  outline: 0;
+  transition: border-color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), background-color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1); }
+
+.has_item_icon .c-icon-form {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  z-index: 1; }
+
+.c-icon {
+  display: inline-block;
+  vertical-align: top; }
+
+.c-icon-txt {
+  background: url(../img.SignIn/sprites-hash-6954197b.png) -468px -161px;
+  width: 20px;
+  height: 20px; }
+
+.c-icon-password {
+  background: url(../img.SignIn/sprites-hash-6954197b.png) -396px -161px;
+  width: 20px;
+  height: 20px; }
+
+.u-input-warning, .u-input-success {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  z-index: 11;
+  padding-right: 10px;
+  padding-left: 5px;
+  line-height: 44px;
+  font-size: 17px;
+  background: #fff;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0; }
+
+.iconfont {
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
+
+.icon-if-wrong {
+  color: #f64a4a; }
+
+.icon-if-sucess {
+  color: #47b85c; }
+
+.right_input-tip {
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  min-height: 19px;
+  max-height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  display: block; }
+
+.SignIn-error {
+  min-height: 40px; }
+
+.warSign_item_group {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  transition: none !important;
+  opacity: 1 !important; }
+
+.record {
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+  margin-bottom: 27px;
+  font-size: 11px;
+  color: #333333; }
+
+.remember {
+  width: 19px;
+  height: 16px;
+  margin: 3px 0;
+  margin-right: 9px;
+  float: left;
+  background: url(../img.SignIn/sprite.png) 64px 0px; }
+
+.forget {
+  width: 48px;
+  height: 16px;
+  float: right;
+  color: #333333; }
+
+.forget:hover {
+  color: #f10180; }
+
+.SignIn_but {
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 300px;
+  background: #f10180;
+  border-radius: 4px;
+  text-align: center; }
+
+.SignIn_but:hover {
+  color: #FFFFFF; }
+
+.SignIn_in {
+  display: none; }
+
+.SignIn_right_footer {
+  width: 300px;
+  overflow: hidden;
+  padding-right: 30px;
+  padding-left: 30px; }
+  .SignIn_right_footer .right_footer_body {
+    width: 320px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 15px; }
+  .SignIn_right_footer .signIn_WeChat {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+    height: 40px; }
+  .SignIn_right_footer .signIn_WeChat:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 2;
+    width: 60px;
+    height: 40px;
+    content: '';
+    background-color: #fff; }
+  .SignIn_right_footer .signIn_WeChat:after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 20px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #e0e0e0; }
+  .SignIn_right_footer .wechat_go {
+    position: relative;
+    z-index: 2;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40px;
+    height: 40px; }
+  .SignIn_right_footer .wechat_go_a {
+    display: inline-block;
+    width: 40px;
+    height: 40px; }
+  .SignIn_right_footer .wechat_Icon {
+    background-image: url(../img.SignIn/sprites-hash-6954197b.png);
+    background-position: -308px -161px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    z-index: 3; }
+  .SignIn_right_footer .wechat_txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px; }
+  .SignIn_right_footer .signIn_register {
+    float: right; }
+  .SignIn_right_footer .register_link {
+    z-index: 2;
+    color: #333;
+    line-height: 24px;
+    font-size: 14px;
+    position: relative; }
+  .SignIn_right_footer .register_link:hover {
+    color: #f10180; }
+  .SignIn_right_footer .signIn_style {
+    margin-left: -10px;
+    position: relative; }
+  .SignIn_right_footer .signIn_style_list {
+    display: inline-block;
+    vertical-align: top; }
+  .SignIn_right_footer .signIn_list_item {
+    float: left;
+    position: relative;
+    padding-right: 11px;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 11px; }
+  .SignIn_right_footer .signIn_list_item:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    margin-top: -5px;
+    height: 10px;
+    content: '';
+    border-left: 1px solid #e0e0e0; }
+  .SignIn_right_footer .signIn_list_item:last-child:after {
+    display: none; }
+  .SignIn_right_footer .isOpening .signIn_style_link, .SignIn_right_footer .isOpening .signIn_style_link:active, .SignIn_right_footer .isOpening .signIn_style_link:hover {
+    cursor: default;
+    color: #999; }
+  .SignIn_right_footer .more-button {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    line-height: 24px;
+    color: #999;
+    font-size: 11px; }
+  .SignIn_right_footer .more-button .icon-xia, .SignIn_right_footer .more-button .icon-to-top {
+    margin-left: 5px;
+    vertical-align: top;
+    line-height: 24px; }
+  .SignIn_right_footer .more-button .more_collapse {
+    display: none; }
+  .SignIn_right_footer .more_style_hidden {
+    padding-top: 17px; }
+  .SignIn_right_footer .login-other-list {
+    margin-left: -15px;
+    width: 330px;
+    font-size: 0; }
+  .SignIn_right_footer .login-other-item {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px;
+    min-width: 66px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px; }
+  .SignIn_right_footer .login-other-item:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    margin-top: -5px;
+    height: 10px;
+    content: '';
+    border-left: 1px solid #e0e0e0; }
+  .SignIn_right_footer .login-other-item:last-child:after, .SignIn_right_footer .login-other-item:nth-child(5n):after {
+    display: none; }
+  .SignIn_right_footer .more_style_hidden {
+    display: none; }
+
+footer {
+  margin: 0 auto;
+  width: 1000px;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  font-size: 11px;
+  color: #666; }
+
+/*# sourceMappingURL=vipSignIn.css.map */

@@ -10,6 +10,7 @@ function $(str){
 	}
 }
 
+
 var myTimer = null;//定义了一个定时器，赋值为null。
 var ord = 0;//当前图片的序号//3	
 	

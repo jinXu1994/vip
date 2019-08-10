@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,dt,textarea,select,input,hr
+{
+    margin:0;
+    padding:0;
+}
+a{
+  text-decoration:none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    /*display:block;*/
+    border:none;
+}
+
+a, img {
+    vertical-align: top;
+    background: 0 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    }
+    
+i{
+    display: block;
+}
+
+i,em{
+    font-style: normal;
+}
+
+html,body{
+    height:100%;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+//头部
+header{
+    margin-bottom: 30px;
+    height: 78px;
+    border-bottom: 2px solid #f3168a;
+    background-color: #fff;
+//  background-color:cornflowerblue;
+}
+    .headerBox{
+        position: relative;
+        z-index: 1;
+        width: 960px;
+        margin:0 auto;
+//      background-color:palegreen;
+        height: 76px;
+    }
+        .mylogo{
+            height: 48px;
+            float: left;
+            padding: 16px 0 12px;
+        }
+//      信息
+        .headerBox_nav{
+            float: right;
+            padding-top: 10px;
+            padding-right: 5px;
+            height: 18px;
+            line-height: 18px;
+            color: grey;
+//          background-color:paleturquoise;
+//          width: 540px;
+            font-size: 12px;
+        }
+        .headerBox_nav a{
+            color: grey;
+            text-decoration: none;
+        }
+        
+        .headerBox_nav a:hover {
+            color: black;
+        }
+//          个人信息部分
+            .head_div{
+               line-height: 26px;
+            }
+            .div_left{
+                float:left;
+            }
+                .nav_div_num{
+                   display:inline-block;
+                    margin-left: 5px;
+                    margin-right:13px;
+                    background: url(../img.ShoppingCart/sprites-hash-29a8cdc6.png) -402px -253px;
+                    height: 26px;
+                    width:26px;
+                    vertical-align: top;               
+               }
+               .nav_div_choose{
+                   margin: 0 7px;
+               }
+            .div_right{
+                float:left;
+            }
+            .head_div_same{
+                float:left;
+            }
+                .sameju{
+                    margin: 0 12px;
+                }
+                    .iconfont{
+                        margin-right: 6px;
+                    }
+                
+                    .sameju .if_num{
+                        font-size: 12px;
+                    }
+                    .sameju .if_kefu,.sameju .if_vip{
+                        font-size: 14px;
+                    }
+                    
+                    .sameju .if_xia{
+//                      font-size: 16px;
+                        margin-left: 6px;
+                        margin-right: 12px;
+                    }
+//      帮助
+        .my-help{
+            position: absolute;
+            right: 30px;
+            bottom: 14px;
+            z-index: 1;
+            height: 20px;
+//          background-color:palevioletred;
+//          width: 410px;
+        }
+         
+            .my-help-item{
+                    display: inline-block;
+                    margin-left: 25px;
+                    white-space: nowrap;
+            }
+            .help-item-glyphicon{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 12px;
+            }
+            .Quality{
+                background: url(../img.ShoppingCart/sprites-hash-29a8cdc6.png) -587px -145px;
+            }
+            .Replacement{
+                background: url(../img.ShoppingCart/sprites-hash-29a8cdc6.png) -432px -253px;
+            }
+            .Limited-time{
+                background: url(../img.ShoppingCart/sprites-hash-29a8cdc6.png) -587px -169px;
+            }
+            .help-item-txt{
+                display: inline-block;
+                vertical-align: top;
+                line-height: 20px;
+                font-size: 12px;
+            }
+
+
+//购物
+.shopping{
+    position: relative;
+    z-index: 1;
+    width: 960px;
+    margin:0 auto;
+    overflow: hidden;
+    background-color:palegreen;
+    height: 678px;
+}
+    .classify{
+        border-bottom: 1px solid #d0d0d0;
+        position: relative;
+        overflow: hidden;
+        line-height: 54px;
+    }
+        .classify-goods,.classify-Drugs,.classify_div{
+            float: left;
+            height: 54px;
+            line-height: 54px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .classify-goods{
+//          padding-bottom: 12px;
+            border-bottom: 3px solid #f10180;
+        }
+        .classify-goods,.classify-Drugs:hover{
+            color: #f1019f;
+        }
+            .classify_Sh,.classify-sp{
+                margin-left: 10px;
+                margin-right:10px;
+            }
+
+                .classify-Drugs-span .countdown{
+                    display: none;
+                }
+//  商品分类
+//  配送地址
+            
+//  商品信息（单价）
+                
+//  商品信息总价            
+            
+            
+            
+footer{
+    width:100%;
+    border-top: 1px solid #ebebeb;
+    color: #4d4d4d;
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+    clear: both;
+    overflow: hidden;
+    line-height: 22px;
+    padding-top: 0;  
+    background-color: #fcfcfc;
+}
+
+    /*底部盒子*/
+    .foot_inner{
+        width: 960px;
+        overflow: hidden;
+        margin: 0 auto;
+        /*background:pink;*/
+        
+    }
+        
+        footer a{
+            color: grey;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #f10180;
+        }
+
+
+        /*<!--底部3关于我们导航栏-->*/
+        .Foot3 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0;
+            margin-top: 25px;
+            overflow: hidden;
+            
+            /*background: springgreen;*/
+        }
+            /*关于我们连接部分*/
+            .foot3_link{
+                background-color: #d7237e;
+                line-height: 30px;
+            }
+               
+            .foot3_link a {
+                margin-left: 2px;
+                margin-right: 2px;
+                color: #fff;
+            }   
+            
+            /*关于我们的文字简介*/
+            .foot3_txt{
+                color: #999;
+                margin: 14px 0;
+                line-height: 19px;
+            }
+                   
+    /*---------------------*/
+    /*<!--底部合作伙伴-->*/
+    .foot_end{
+    padding: 4px 0 4px;
+    background-color: #fff;
+    }
+    
+    .foot_end_01{
+        margin: 0 auto;
+        width: 960px;
+        height: 40px;
+        text-align: center;
+        overflow: hidden;
+        /*background:blue;*/
+    }
+    
+    .end_img {
+        display: inline-block;
+        margin-right: 9px;
+        height: 40px;
+        background-image: url(../img/footer/4.png);
+        background-repeat: no-repeat;
+    }
+    
+    .end_img01{
+        width: 105px;
+        background-position: 0 0;
+    }
+
+    .end_img02{
+        width: 99px;
+        background-position: 0 -150px;
+    }
+    
+    .end_img03{
+        width: 66px;
+        background-position: 0 -200px;      
+    }
+
+    .end_img04{
+        width: 70px;
+        background-position: 0 -250px;
+    }
+    
+    .end_img05{
+        width: 75px;
+        background-position: 0 -300px;
+    }
+    
+    .end_img06{
+        width: 76px;
+        background-position: 0 -400px;
+    }
+    
+    .end_img07{
+        width: 76px;
+        background-position: 0 -450px;
+    }
